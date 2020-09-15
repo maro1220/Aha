@@ -1,0 +1,50 @@
+.Menu{
+  margin-top:50px;
+}
+.Menu div{
+  max-width: 1000px;
+  width: 90vw;
+  margin:0 auto;
+  text-align: left;
+}
+
+.Menu div span{
+  display: block;
+  width: 40px;
+  height: 8px;
+  background: #1fc7c1;
+}
+
+.Menu div p {
+  font-size: 1.2rem;
+  margin: 10px 0 15px 0;
+  font-weight: 700;
+}
+.Menu .item{
+  cursor: pointer;
+  width:150px;
+  height:150px;
+  margin:10px 10px; 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.Menu .item:hover{
+  background:#1fc7c1;
+  color:white;
+}
+
+.Menu .itemicon{
+  color:black;
+  font-size: 3rem;
+  transition: 0.2s;
+}
+.Menu .item:hover .itemicon{
+  
+  color:white;
+  transform: scale(1.2);
+}
