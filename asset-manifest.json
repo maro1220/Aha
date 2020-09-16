@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/Aha/static/css/main.2d4745be.chunk.css",
-    "main.js": "/Aha/static/js/main.6c87b4e5.chunk.js",
-    "main.js.map": "/Aha/static/js/main.6c87b4e5.chunk.js.map",
+    "main.css": "/Aha/static/css/main.c49fcb9a.chunk.css",
+    "main.js": "/Aha/static/js/main.6b8339a3.chunk.js",
+    "main.js.map": "/Aha/static/js/main.6b8339a3.chunk.js.map",
     "runtime-main.js": "/Aha/static/js/runtime-main.dd253b47.js",
     "runtime-main.js.map": "/Aha/static/js/runtime-main.dd253b47.js.map",
-    "static/js/2.6a6ebfa0.chunk.js": "/Aha/static/js/2.6a6ebfa0.chunk.js",
-    "static/js/2.6a6ebfa0.chunk.js.map": "/Aha/static/js/2.6a6ebfa0.chunk.js.map",
+    "static/js/2.f9ce469b.chunk.js": "/Aha/static/js/2.f9ce469b.chunk.js",
+    "static/js/2.f9ce469b.chunk.js.map": "/Aha/static/js/2.f9ce469b.chunk.js.map",
     "index.html": "/Aha/index.html",
-    "precache-manifest.ed7fa9a7781b98f014f3c6d453040119.js": "/Aha/precache-manifest.ed7fa9a7781b98f014f3c6d453040119.js",
+    "precache-manifest.d5eb09e68a3956b95fbcf84e06557562.js": "/Aha/precache-manifest.d5eb09e68a3956b95fbcf84e06557562.js",
     "service-worker.js": "/Aha/service-worker.js",
-    "static/css/main.2d4745be.chunk.css.map": "/Aha/static/css/main.2d4745be.chunk.css.map",
-    "static/js/2.6a6ebfa0.chunk.js.LICENSE.txt": "/Aha/static/js/2.6a6ebfa0.chunk.js.LICENSE.txt",
+    "static/css/main.c49fcb9a.chunk.css.map": "/Aha/static/css/main.c49fcb9a.chunk.css.map",
+    "static/js/2.f9ce469b.chunk.js.LICENSE.txt": "/Aha/static/js/2.f9ce469b.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/Aha/static/media/1.6542b896.png",
+    "static/media/2-3.png": "/Aha/static/media/2-3.60a13f39.png",
+    "static/media/2-4.png": "/Aha/static/media/2-4.c84ab8d6.png",
+    "static/media/bg-answer.png": "/Aha/static/media/bg-answer.b9719a10.png",
+    "static/media/bg-question.png": "/Aha/static/media/bg-question.f5360c35.png",
+    "static/media/desktop.jpg": "/Aha/static/media/desktop.f6eb1642.jpg",
+    "static/media/home-lower-bg_243f6a5.jpg": "/Aha/static/media/home-lower-bg_243f6a5.243f6a59.jpg",
     "static/media/logo.svg": "/Aha/static/media/logo.5d5d9eef.svg",
     "static/media/title2.png": "/Aha/static/media/title2.bd5f41de.png",
     "static/media/title3.png": "/Aha/static/media/title3.3185acd9.png",
@@ -19,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dd253b47.js",
-    "static/js/2.6a6ebfa0.chunk.js",
-    "static/css/main.2d4745be.chunk.css",
-    "static/js/main.6c87b4e5.chunk.js"
+    "static/js/2.f9ce469b.chunk.js",
+    "static/css/main.c49fcb9a.chunk.css",
+    "static/js/main.6b8339a3.chunk.js"
   ]
 }
