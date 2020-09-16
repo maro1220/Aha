@@ -14,6 +14,7 @@ import DvrIcon from '@material-ui/icons/Dvr';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
+import desktop from '../images/main/desktop.jpg'
 
 
 
@@ -38,7 +39,7 @@ const MainMenu = () => {
         <Paper className="item" ><WbIncandescentIcon className="itemicon" />생활상식</Paper>
         <Paper className="item" ><MonetizationOnIcon className="itemicon" />재태크 상식</Paper>
       </Grid>
-
+      <img src={desktop}></img>
     </div>
   );
 };

@@ -1,0 +1,16 @@
+.message{
+    position: fixed;
+    width: 67px;
+    height: 50px;
+    background: white;
+    border:3px solid #1fc7c1;
+    border-radius: 10px;
+    z-index: 11;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}

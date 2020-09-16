@@ -1,0 +1,232 @@
+.SubMenu{
+  position: relative;
+  margin-top:50px;
+}
+.SubMenu div{
+  
+  max-width: 1000px;
+  width: 90vw;
+  margin:0 auto;
+  text-align: left;
+}
+
+.SubMenu >div >span{
+  display: block;
+  width: 40px;
+  height: 8px;
+  background: #1fc7c1;
+}
+
+.SubMenu div p {
+  font-size: 1.2rem;
+  margin: 10px 0 15px 0;
+  font-weight: 700;
+}
+.SubMenu .item{
+
+  width:235px;
+  height:150px;
+  margin:10px 10px; 
+  border-radius: 20px;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+}
+
+.SubMenu .item div{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SubMenu .item div p{
+  color:rgb(50,50,50);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.SubMenu .item div p::first-letter{
+  margin-right: 10px;
+  color:#1fc7c1;
+  font-size: 1.4rem;
+}
+
+.SubMenu .item div span{
+
+  font-size: 0.9rem;
+  color: gray;
+}
+
+
+
+.SubMenuImg{
+  margin:0 auto ;
+  padding-bottom: 60px;
+  position: relative;
+  width: 90vw;
+  max-width: 1000px;
+  color: white;
+  z-index: 1;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  height: 170px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.SubMenuImg p{
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.SubMenuImg span{
+  font-weight: 700;
+}
+.SubMenuImg button{
+
+  display: block;
+  margin:10px auto;
+  background: #1fc7c1;
+  border: none;
+  outline: none;
+  stroke: none;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  height: 50px;
+  width: 200px;
+}
+.SubMenuImg img{
+  top:0;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50% , 0);
+  max-width: 1000px;
+  min-width: 1000px;
+  width: 90vw;
+}
+
+@media(max-width:640px){
+
+  .SubMenu{
+    position: relative;
+    margin-top:50px;
+  }
+  .SubMenu div{
+    
+    max-width: 1000px;
+    width: 90vw;
+    margin:0 auto;
+    text-align: left;
+  }
+  
+  .SubMenu >div >span{
+    display: block;
+    width: 40px;
+    height: 8px;
+    background: #1fc7c1;
+  }
+  
+  .SubMenu div p {
+    font-size: 1rem;
+    margin: 10px 0 15px 0;
+    font-weight: 700;
+  }
+  .SubMenu .item{
+  
+    width:100%;
+    height:100px;
+    margin:5px 5px; 
+    border-radius: 10px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+  }
+  
+  .SubMenu .item div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .SubMenu .item div p{
+    color:rgb(50,50,50);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .SubMenu .item div p::first-letter{
+    margin-right: 10px;
+    color:#1fc7c1;
+    font-size: 1.4rem;
+  }
+  
+  .SubMenu .item div span{
+  
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  
+  
+  .SubMenuImg{
+    margin:0 auto ;
+    padding-bottom: 60px;
+    position: relative;
+    width: 90vw;
+    max-width: 1000px;
+    color: white;
+    z-index: 1;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    height: 170px;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .SubMenuImg p{
+    line-height: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .SubMenuImg span{
+    font-weight: 700;
+  }
+  .SubMenuImg button{
+  
+    display: block;
+    margin:10px auto;
+    background: #1fc7c1;
+    border: none;
+    outline: none;
+    stroke: none;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    height: 50px;
+    width: 200px;
+  }
+  .SubMenuImg img{
+    top:0;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50% , 0);
+    max-width: 1000px;
+    min-width: 1000px;
+    width: 90vw;
+  }
+}

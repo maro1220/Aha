@@ -6,7 +6,7 @@
 .area {
   
   position: relative;
-  max-width: 1600px;
+
   width: 90vw;
   overflow: hidden;
   margin: 80px auto 0 auto;
@@ -17,7 +17,7 @@
 .area .slider {
   display: flex;
 
-  width: 10800px;
+  width: 200000px;
   height: 250px;
 }
 
@@ -65,4 +65,85 @@
   display: flex;
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+.listbox .listicon{
+  margin-right: 10px;
+}
+
+
+@media(max-width:640px){
+  .area {
+  
+    position: relative;
+    max-width: 1600px;
+    width: 90vw;
+    overflow: hidden;
+    margin: 80px auto 0 auto;
+    border-radius: 30px;
+    height: 200px;
+  }
+  
+  .area .slider {
+    display: flex;
+  
+    width: 10800px;
+    height: 200px;
+  }
+  
+  .slider_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 90vw;
+    height: 200px;
+  }
+
+  .slider_list img{
+    width: 80vw;
+  }
+  
+  .listbox {
+    position: absolute;
+    top: 250px;
+    left: calc(50%);
+    transform: translate(-50%, 0);
+    max-width: 1000px;
+    width: 80vw;
+    height: 70px;
+    background: white;
+    box-shadow: 1px 1px 5px 1px rgb(219, 219, 219);
+    border-radius: 15px;
+  }
+  
+  .listbox ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .listbox li {
+    border-left: 1px solid black;
+    flex: 0.25;
+    display: flex;
+    justify-content: center;
+  }
+  .listbox li:nth-of-type(1) {
+    border: none;
+  }
+  
+  .listbox .listicon{
+    display: none;
+  }
+
+  .listbox .listtext {
+   
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
 }

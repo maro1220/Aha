@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MainNav() {
 
+  
   const [num,setNum] = useState(1);
   const [style,setStyle] = useState({
     marginTop:0,
@@ -113,7 +114,7 @@ export default function MainNav() {
             </div>
             <div className="snav2" >
               <div className="slider" style={style}>
-                {data.map(data=><Link to="/" className="Link" >{data.text}</Link>)}
+                {data.map(data=><Link to="/" className="Link" key={data.id} >{data.text}</Link>)}
               </div>
  
             </div>
@@ -174,7 +175,7 @@ export default function MainNav() {
                           <div>
                             <p style={{margin:'10px 20px 0px 0px',fontWeight:'700',fontSize:'1.1rem'}}>아하QA</p>
                           </div>
-                          <div className="list" style={{width:'300px'}}>
+                          <div className="list" >
                             <MenuItem onClick={handleClose}>의료</MenuItem>
                             <MenuItem onClick={handleClose}>법률</MenuItem>
                             <MenuItem onClick={handleClose}>세무</MenuItem>

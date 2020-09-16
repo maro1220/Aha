@@ -16,26 +16,32 @@ const Slider = () => {
   const refs = useRef();
   const [li, setLi] = useState([
     {
+      id:1,
       src: img1,
       color: "#20d7d0",
     },
     {
+      id:2,
       src: img2,
       color: "#0e2ab1",
     },
     {
+      id:3,
       src: img3,
       color: "#3c50d1",
     },
     {
+      id:4,
       src: img4,
       color: "#0076bf",
     },
     {
+      id:5,
       src: img5,
       color: "#6158f2",
     },
     {
+      id:6,
       src: img1,
       color: "#20d7d0",
     },
@@ -64,7 +70,7 @@ const Slider = () => {
         <div className="area">
           <ul className="slider" ref={refs} style={style}>
             {li.map((li) => (
-              <li className="slider_list" style={{ background: li.color }}>
+              <li key={li.id} className="slider_list" style={{ background: li.color }}>
                 <Link to="/" style={{ width: "100%" }}>
                   <img src={li.src} />
                 </Link>
@@ -76,26 +82,26 @@ const Slider = () => {
           <ul>
             <li>
               <Link to="/" className="listtext">
-                <SaveAltTwoTone style={{ marginRight: "10px" }} />
-                출석스탬프
+                <SaveAltTwoTone className="listicon" />
+                아하소개
               </Link>
             </li>
             <li>
               <Link to="/" className="listtext">
-                <SchoolIcon style={{ marginRight: "10px" }} />
-                지식 프로필
+                <SchoolIcon className="listicon"  />
+                공지사항
               </Link>
             </li>
             <li>
               <Link to="/" className="listtext">
-                <TrackChangesIcon style={{ marginRight: "10px" }} />
-                룰렛이벤트
+                <TrackChangesIcon className="listicon"  />
+                이벤트
               </Link>
             </li>
             <li>
               <Link to="/" className="listtext">
-                <PersonIcon style={{ marginRight: "10px" }} />
-                계정설정
+                <PersonIcon className="listicon" />
+                아하 토큰
               </Link>
             </li>
           </ul>

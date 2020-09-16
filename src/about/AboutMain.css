@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "yg-jalnan";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.AboutMain{
+    margin-top: 120px;
+}
+
+.AboutMain .main1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMain .main1 h2{
+    font-family: "yg-jalnan";
+    font-size: 2.4rem ;
+    font-weight: 700;
+    color : rgb(50,50,50);
+}
+
+.AboutMain .main1 p{
+    
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color:rgb(80,80,80);
+    line-height: 30px;
+}
+
+.AboutMain .main1 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #1fc7c1;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px 0px rgb(150,150,150);
+}
+
+.AboutMain>img{
+    margin-top:50px;
+    max-width: 500px;
+    width: 90vw;
+}
+
+.AboutMain .main2{
+  
+    width: 100vw;
+    background: #6158f2;
+}
+
+.AboutMain .main2 h2{
+    padding-top: 70px;
+    font-family: "yg-jalnan";
+    font-size: 2.4rem ;
+    font-weight: 700;
+    color : white;
+}
+.AboutMain>.main2>div{
+    max-width:1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+.AboutMain .main2 .main2_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    height: 350px;
+    border-radius: 50px;
+    margin:50px;
+    background-color: yellow;
+    
+}
+
+.AboutMain .main2 .main2_box p{
+    font-family: "yg-jalnan";
+    font-weight: 700;
+    font-size:1.4rem;
+    color:#231aac;
+    
+}
+
+.AboutMain .main2 .main2_box span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.AboutMain .main3{
+    width: 100vw;
+    display: flex;
+}
+
+.AboutMain .main3 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+    height: 250px;
+    flex:0.5;
+}
+
+.AboutMain .main3 div p{
+    color:white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.AboutMain .main3 div span{
+    margin-top: 10px;
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    color: #231aac;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: yellow;
+    border-radius: 30px;
+}
+
+.AboutMain .main3 div:first-child span{
+    margin-top: 10px;
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #1fc7c1;
+    border-radius: 30px;
+}
+
+.AboutMain .main3 div span:hover{
+    filter: brightness(0.9);
+}
+
+
+@media(max-width:860px){
+
+
+    .AboutMain{
+        margin-top: 120px;
+    }
+    
+    .AboutMain .main1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .AboutMain .main1 h2{
+        font-family: "yg-jalnan";
+        font-size: 2rem ;
+        font-weight: 700;
+        color : rgb(50,50,50);
+    }
+    
+    .AboutMain .main1 p{
+        width: 90%;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color:rgb(80,80,80);
+        line-height: 30px;
+    }
+    
+    .AboutMain .main1 span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 60px;
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: #1fc7c1;
+        color: white;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: 1px 1px 5px 0px rgb(150,150,150);
+    }
+    
+    .AboutMain>img{
+        margin-top:50px;
+        max-width: 500px;
+        width: 90vw;
+    }
+    
+    .AboutMain .main2{
+      
+        width: 100vw;
+        background: #6158f2;
+    }
+    
+    .AboutMain .main2 h2{
+        padding-top: 70px;
+        font-family: "yg-jalnan";
+        font-size: 2rem ;
+        font-weight: 700;
+        color : white;
+    }
+    .AboutMain>.main2>div{
+        max-width:1000px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+    .AboutMain .main2 .main2_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:350px;
+        height: 350px;
+        border-radius: 50px;
+        margin:50px;
+        background-color: yellow;
+        
+    }
+    
+    .AboutMain .main2 .main2_box p{
+        font-family: "yg-jalnan";
+        font-weight: 700;
+        font-size:1.4rem;
+        color:#231aac;
+        
+    }
+    
+    .AboutMain .main2 .main2_box span{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .AboutMain .main3{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .AboutMain .main3 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-position:center;
+        
+        flex:1;
+    }
+    
+    .AboutMain .main3 div p{
+        padding-top:60px;
+        color:white;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    
+    .AboutMain .main3 div span{
+        margin-top: 10px;
+        width: 230px;
+        height: 45px;
+        line-height: 45px;
+        color: #231aac;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: yellow;
+        border-radius: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .AboutMain .main3 div:first-child span{
+        margin-top: 10px;
+        width: 230px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: #1fc7c1;
+        border-radius: 30px;
+    }
+    
+    .AboutMain .main3 div span:hover{
+        filter: brightness(0.9);
+    }
+}
