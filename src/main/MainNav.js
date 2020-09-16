@@ -21,15 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MainNav() {
 
-  let history = useHistory();
-  const aha=()=>{
-      history.push("/Aha")
-      window.scrollTo({top:0})
-  }
-  const about=()=>{
-      history.push("/Aha/about")
-      window.scrollTo({top:0})
-  }
+
   
   const [num,setNum] = useState(1);
   const [style,setStyle] = useState({
@@ -103,13 +95,13 @@ export default function MainNav() {
   }, [open]);
 
   return (
-    <Router>
+  
       <div className={classes.root}>
         <div className="navall">
           <div className="nav">
             <div className="snav1">
               <img src={aha_logo_black}></img>
-              <Link onClick={aha} to='/Aha' className="Link">
+              <Link to='/Aha' className="Link">
                 Q&amp;A홈
               </Link>
               <Button
@@ -129,8 +121,8 @@ export default function MainNav() {
             </div>
             <div className="snav3">
               <input placeholder="아하 지식검색"/>
-              <Link onClick={aha} to='/Aha'  className="Link">로그인</Link>
-              <Link onClick={aha}  to='/Aha'  className="Link">회원가입</Link>
+              <Link  to='/Aha'  className="Link">로그인</Link>
+              <Link to='/Aha'  className="Link">회원가입</Link>
             </div>
             <Popper
               open={open}
@@ -236,6 +228,6 @@ export default function MainNav() {
           </div>
         </div>
       </div>
-    </Router>
+  
   );
 }

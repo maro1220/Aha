@@ -15,15 +15,6 @@ import PersonIcon from "@material-ui/icons/Person";
 const Slider = () => {
 
 
-  let history = useHistory();
-  const aha=()=>{
-      history.push("/Aha")
-      window.scrollTo({top:0})
-  }
-  const about=()=>{
-      history.push("/Aha/about")
-      window.scrollTo({top:0})
-  }
 
   const refs = useRef();
   const [li, setLi] = useState([
@@ -78,12 +69,12 @@ const Slider = () => {
 
   return (
     <div>
-      <Router>
+     
         <div className="area">
           <ul className="slider" ref={refs} style={style}>
             {li.map((li) => (
               <li key={li.id} className="slider_list" style={{ background: li.color }}>
-                <Link onClick={aha} to="/Aha" style={{ width: "100%" }}>
+                <Link to="/Aha" style={{ width: "100%" }}>
                   <img src={li.src} />
                 </Link>
               </li>
@@ -93,32 +84,32 @@ const Slider = () => {
         <div className="listbox">
           <ul>
             <li>
-              <Link onClick={about} to='/Aha/about'  className="listtext">
+              <Link to='/Aha/about'  className="listtext">
                 <SaveAltTwoTone className="listicon" />
                 아하소개
               </Link>
             </li>
             <li>
-              <Link onClick={aha} to='/Aha'  className="listtext">
+              <Link  to='/Aha'  className="listtext">
                 <SchoolIcon className="listicon"  />
                 공지사항
               </Link>
             </li>
             <li>
-              <Link onClick={aha} to='/Aha'   className="listtext">
+              <Link to='/Aha'   className="listtext">
                 <TrackChangesIcon className="listicon"  />
                 이벤트
               </Link>
             </li>
             <li>
-              <Link onClick={aha} to='/Aha'   className="listtext">
+              <Link  to='/Aha'   className="listtext">
                 <PersonIcon className="listicon" />
                 아하 토큰
               </Link>
             </li>
           </ul>
         </div>
-      </Router>
+ 
     </div>
   );
 };
