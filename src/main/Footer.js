@@ -23,8 +23,8 @@ const Footer = () => {
                     <img src={ahalogo}></img>
                     <div className="ahainfo">
                         <ul>
-                            <li><Link to="/Aha/about" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>아하 소개</Link> </li>
-                            <li><Link onClick={aha} style={{color:' rgb(170,170,170)',textDecoration:'none'}}>FAQ</Link> </li>
+                            <li><Link onClick={about} to="/Aha/about" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>아하 소개</Link> </li>
+                            <li><Link onClick={aha} to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>FAQ</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>이용약관</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>개인정보처리방침</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>광고문의</Link> </li>

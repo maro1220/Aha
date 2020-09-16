@@ -7,7 +7,7 @@ import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
 import { makeStyles } from "@material-ui/core/styles";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link ,useHistory } from "react-router-dom";
 import aha_logo_black from "../images/main/aha_logo_black.png";
 import "./MainNav.css";
 import useInterval from 'react-useinterval'
@@ -21,6 +21,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MainNav() {
 
+  let history = useHistory();
+  const aha=()=>{
+      history.push("/Aha")
+      window.scrollTo({top:0})
+  }
+  const about=()=>{
+      history.push("/Aha/about")
+      window.scrollTo({top:0})
+  }
   
   const [num,setNum] = useState(1);
   const [style,setStyle] = useState({
@@ -100,7 +109,7 @@ export default function MainNav() {
           <div className="nav">
             <div className="snav1">
               <img src={aha_logo_black}></img>
-              <Link to="/" className="Link">
+              <Link onClick={aha} to='/Aha' className="Link">
                 Q&amp;A홈
               </Link>
               <Button
@@ -114,14 +123,14 @@ export default function MainNav() {
             </div>
             <div className="snav2" >
               <div className="slider" style={style}>
-                {data.map(data=><Link to="/" className="Link" key={data.id} >{data.text}</Link>)}
+                {data.map(data=><Link to='/Aha'  className="Link" key={data.id} >{data.text}</Link>)}
               </div>
  
             </div>
             <div className="snav3">
               <input placeholder="아하 지식검색"/>
-              <Link to="/" className="Link">로그인</Link>
-              <Link to="/" className="Link">회원가입</Link>
+              <Link onClick={aha} to='/Aha'  className="Link">로그인</Link>
+              <Link onClick={aha}  to='/Aha'  className="Link">회원가입</Link>
             </div>
             <Popper
               open={open}
@@ -195,6 +204,7 @@ export default function MainNav() {
                             <MenuItem onClick={handleClose}>부동산</MenuItem>
                             <MenuItem onClick={handleClose}>
                               <Link
+
                                 style={{
                                   textDecoration: "none",
                                   color: "black",

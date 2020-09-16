@@ -6,13 +6,25 @@ import img2 from "../images/main/title2.png";
 import img3 from "../images/main/title3.png";
 import img4 from "../images/main/title4.png";
 import img5 from "../images/main/title5.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link,useHistory } from "react-router-dom";
 import SaveAltTwoTone from "@material-ui/icons/SaveAltTwoTone";
 import SchoolIcon from "@material-ui/icons/School";
 import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import PersonIcon from "@material-ui/icons/Person";
 
 const Slider = () => {
+
+
+  let history = useHistory();
+  const aha=()=>{
+      history.push("/Aha")
+      window.scrollTo({top:0})
+  }
+  const about=()=>{
+      history.push("/Aha/about")
+      window.scrollTo({top:0})
+  }
+
   const refs = useRef();
   const [li, setLi] = useState([
     {
@@ -71,7 +83,7 @@ const Slider = () => {
           <ul className="slider" ref={refs} style={style}>
             {li.map((li) => (
               <li key={li.id} className="slider_list" style={{ background: li.color }}>
-                <Link to="/" style={{ width: "100%" }}>
+                <Link onClick={aha} to="/Aha" style={{ width: "100%" }}>
                   <img src={li.src} />
                 </Link>
               </li>
@@ -81,25 +93,25 @@ const Slider = () => {
         <div className="listbox">
           <ul>
             <li>
-              <Link to="/" className="listtext">
+              <Link onClick={about} to='/Aha/about'  className="listtext">
                 <SaveAltTwoTone className="listicon" />
                 아하소개
               </Link>
             </li>
             <li>
-              <Link to="/" className="listtext">
+              <Link onClick={aha} to='/Aha'  className="listtext">
                 <SchoolIcon className="listicon"  />
                 공지사항
               </Link>
             </li>
             <li>
-              <Link to="/" className="listtext">
+              <Link onClick={aha} to='/Aha'   className="listtext">
                 <TrackChangesIcon className="listicon"  />
                 이벤트
               </Link>
             </li>
             <li>
-              <Link to="/" className="listtext">
+              <Link onClick={aha} to='/Aha'   className="listtext">
                 <PersonIcon className="listicon" />
                 아하 토큰
               </Link>
