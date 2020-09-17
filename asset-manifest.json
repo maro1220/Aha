@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/Aha/static/css/main.c49fcb9a.chunk.css",
-    "main.js": "/Aha/static/js/main.21bc64d2.chunk.js",
-    "main.js.map": "/Aha/static/js/main.21bc64d2.chunk.js.map",
+    "main.css": "/Aha/static/css/main.0f8e798a.chunk.css",
+    "main.js": "/Aha/static/js/main.8ab8aa36.chunk.js",
+    "main.js.map": "/Aha/static/js/main.8ab8aa36.chunk.js.map",
     "runtime-main.js": "/Aha/static/js/runtime-main.dd253b47.js",
     "runtime-main.js.map": "/Aha/static/js/runtime-main.dd253b47.js.map",
-    "static/js/2.1399bd79.chunk.js": "/Aha/static/js/2.1399bd79.chunk.js",
-    "static/js/2.1399bd79.chunk.js.map": "/Aha/static/js/2.1399bd79.chunk.js.map",
+    "static/js/2.8de27fb0.chunk.js": "/Aha/static/js/2.8de27fb0.chunk.js",
+    "static/js/2.8de27fb0.chunk.js.map": "/Aha/static/js/2.8de27fb0.chunk.js.map",
     "index.html": "/Aha/index.html",
-    "precache-manifest.97df0e4e11788143e7f8995700eac498.js": "/Aha/precache-manifest.97df0e4e11788143e7f8995700eac498.js",
+    "precache-manifest.587b190722eb9a3592895f9329615b4c.js": "/Aha/precache-manifest.587b190722eb9a3592895f9329615b4c.js",
     "service-worker.js": "/Aha/service-worker.js",
-    "static/css/main.c49fcb9a.chunk.css.map": "/Aha/static/css/main.c49fcb9a.chunk.css.map",
-    "static/js/2.1399bd79.chunk.js.LICENSE.txt": "/Aha/static/js/2.1399bd79.chunk.js.LICENSE.txt",
+    "static/css/main.0f8e798a.chunk.css.map": "/Aha/static/css/main.0f8e798a.chunk.css.map",
+    "static/js/2.8de27fb0.chunk.js.LICENSE.txt": "/Aha/static/js/2.8de27fb0.chunk.js.LICENSE.txt",
     "static/media/1.png": "/Aha/static/media/1.6542b896.png",
     "static/media/2-3.png": "/Aha/static/media/2-3.60a13f39.png",
     "static/media/2-4.png": "/Aha/static/media/2-4.c84ab8d6.png",
+    "static/media/banner_stamp_attendance.png": "/Aha/static/media/banner_stamp_attendance.6c4e8186.png",
     "static/media/bg-answer.png": "/Aha/static/media/bg-answer.b9719a10.png",
     "static/media/bg-question.png": "/Aha/static/media/bg-question.f5360c35.png",
     "static/media/desktop.jpg": "/Aha/static/media/desktop.f6eb1642.jpg",
     "static/media/home-lower-bg_243f6a5.jpg": "/Aha/static/media/home-lower-bg_243f6a5.243f6a59.jpg",
-    "static/media/logo.svg": "/Aha/static/media/logo.5d5d9eef.svg",
     "static/media/title2.png": "/Aha/static/media/title2.bd5f41de.png",
     "static/media/title3.png": "/Aha/static/media/title3.3185acd9.png",
     "static/media/title4.png": "/Aha/static/media/title4.b6df362c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dd253b47.js",
-    "static/js/2.1399bd79.chunk.js",
-    "static/css/main.c49fcb9a.chunk.css",
-    "static/js/main.21bc64d2.chunk.js"
+    "static/js/2.8de27fb0.chunk.js",
+    "static/css/main.0f8e798a.chunk.css",
+    "static/js/main.8ab8aa36.chunk.js"
   ]
 }
