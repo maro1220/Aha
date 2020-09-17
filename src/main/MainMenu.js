@@ -39,7 +39,7 @@ const MainMenu = () => {
         <Paper className="item" ><WbIncandescentIcon className="itemicon" />생활상식</Paper>
         <Paper className="item" ><MonetizationOnIcon className="itemicon" />재태크 상식</Paper>
       </Grid>
-      <img src={desktop}></img>
+      <img src={desktop} alt="For Men 광고"></img>
     </div>
   );
 };

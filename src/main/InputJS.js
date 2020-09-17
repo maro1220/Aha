@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
 const InputJS = () => {
-  const [style, setStyle] = useState({
+  const [style] = useState({
     maxWidth: "1000px",
     width: "90vw",
     margin: "100px auto 0 auto",

@@ -20,28 +20,28 @@ const AboutMain = () => {
                         white paper
                     </span>
             </div>
-            <img src={main1}></img>
+            <img src={main1} alt="소개페이지"></img>
             <div className="main2">
                 <h2>아하는 어떻게 사용하나요?</h2>
                 <div>
                     <div className="main2_box" >
                         <p>질문</p>
-                        <img src={main2_1}></img>
+                        <img src={main2_1 } alt="질문"></img>
                         <span>사용자는 궁금한 점을<br/>아하에 질문합니다.</span>
                     </div>
                     <div className="main2_box" >
                         <p>전문가의 답변</p>
-                        <img src={main2_2}></img>
+                        <img src={main2_2} alt="전문가의 답변"></img>
                         <span>사전에 인증된 전문 분야의<br/>답변자들이 답변을 등록합니다.</span>
                     </div>
                     <div className="main2_box" >
                         <p>큐레이션</p>
-                        <img src={main2_3}></img>
+                        <img src={main2_3} alt="큐레이션"></img>
                         <span>채택, 공감, 비공감, 신고 등을<br/>통해 질문과 답변을<br/>검증(큐레이션)합니다.</span>
                     </div>
                     <div className="main2_box" >
                         <p>아하토큰</p>
-                        <img src={main2_4}></img>
+                        <img src={main2_4} alt="아하토큰"></img>
                         <span>아하  Q&amp;A 생태계에<br/>기여한 참여자는 자동으로<br/>아하토큰 보상을 받게 됩니다.</span>
                     </div>
                 </div>

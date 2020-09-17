@@ -7,10 +7,7 @@ import img3 from "../images/main/title3.png";
 import img4 from "../images/main/title4.png";
 import img5 from "../images/main/title5.png";
 import { Link} from "react-router-dom";
-import SaveAltTwoTone from "@material-ui/icons/SaveAltTwoTone";
-import SchoolIcon from "@material-ui/icons/School";
-import TrackChangesIcon from "@material-ui/icons/TrackChanges";
-import PersonIcon from "@material-ui/icons/Person";
+
 
 const Slider = () => {
 
@@ -81,34 +78,7 @@ const Slider = () => {
             ))}
           </ul>
         </div>
-        <div className="listbox">
-          <ul>
-            <li>
-              <Link to='/Aha/about'  className="listtext">
-                <SaveAltTwoTone className="listicon" />
-                아하소개
-              </Link>
-            </li>
-            <li>
-              <Link  to='/Aha/notice'  className="listtext">
-                <SchoolIcon className="listicon"  />
-                공지사항
-              </Link>
-            </li>
-            <li>
-              <Link to='/Aha/faq'   className="listtext">
-                <TrackChangesIcon className="listicon"  />
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link  to='/Aha/token'   className="listtext">
-                <PersonIcon className="listicon" />
-                아하 토큰
-              </Link>
-            </li>
-          </ul>
-        </div>
+      
  
     </div>
   );

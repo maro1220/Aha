@@ -13,19 +13,19 @@ const MiniNav = () => {
     useInterval(() => {
         setTimeout(() => {
             setStyle({bottom:'130px',right:'30px'})
-        }, 500);
+        }, 400);
         setTimeout(() => {
             setStyle({bottom:'90px',right:'30px'})
-        }, 800);
+        }, 600);
         setTimeout(() => {
             setStyle({bottom:'120px',right:'30px'})
-        }, 1000);
+        }, 800);
         setTimeout(() => {
             setStyle({bottom:'90px',right:'30px'})
-        },1200);
+        },1000);
         setTimeout(() => {
             setStyle({bottom:'100px',right:'30px'})
-        },1400);
+        },1200);
       }, 2000);
     
   return (

@@ -41,8 +41,8 @@ body {
   align-items: center;
 }
 
-.nav > .snav1 > img {
-  margin-bottom: 10px;
+.nav  .snav1  img {
+  margin-bottom: 5px;
   transform: scale(0.9);
 }
 
@@ -157,7 +157,7 @@ body {
     align-items: center;
   }
   
-  .nav > .snav1 > img {
+  .nav  .snav1  img {
     display: none;
     margin-bottom: 10px;
     transform: scale(0.9);

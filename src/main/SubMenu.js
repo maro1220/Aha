@@ -5,7 +5,7 @@ import "./SubMenu.css";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import homeLower from '../images/main/home-lower-bg_243f6a5.jpg'
 const SubMenu = () => {
-  const [listdata, setListdata] = useState([
+  const [listdata] = useState([
     {
       id: 1,
       text: "Q.집주인이 건물 관리에 소홀할 경우?",
@@ -96,7 +96,7 @@ const SubMenu = () => {
   
     </div>
     <div className="SubMenuImg">
-        <img src={homeLower}></img> 
+        <img src={homeLower} alt="아하의 지식 답변자가 되어보세요."></img> 
         <div>
         <p>아하의 지식답변자가 되어보세요.</p>
           <span>추가수익 + 온라인명성 + 뿌듯함을 한꺼번에 가질 수 있습니다.</span>

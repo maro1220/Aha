@@ -3,7 +3,7 @@ import ahalogo from '../images/main/aha_logo_449d047.png';
 import './Footer.css'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import {BrowserRouter as Router,Link,Route, useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
 
@@ -12,11 +12,11 @@ const Footer = () => {
         <div className="footer">
             <div>
                 <div>
-                    <img src={ahalogo}></img>
+                    <img src={ahalogo} alt="로고이미지"></img>
                     <div className="ahainfo">
                         <ul>
                             <li><Link to="/Aha/about" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>아하 소개</Link> </li>
-                            <li><Link  to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>FAQ</Link> </li>
+                            <li><Link  to="/Aha/faq" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>FAQ</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>이용약관</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>개인정보처리방침</Link> </li>
                             <li><Link to="/Aha" style={{color:' rgb(170,170,170)',textDecoration:'none'}}>광고문의</Link> </li>

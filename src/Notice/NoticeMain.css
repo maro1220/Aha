@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "yg-jalnan";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.noticemain{
+ 
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    margin:40px auto;
+ 
+}
+.noticemain>div:nth-of-type(1){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 240px;
+    text-align: left;
+}
+
+.noticemain>div:nth-of-type(1) ul li{
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.noticemain>div:nth-of-type(1) ul li a{
+    text-decoration: none;
+    color:gray;
+    font-weight: 700;
+}
+
+.noticemain>div:nth-of-type(1) ul li a:hover{
+    color:#1fc7c1;
+}
+
+.noticemain>div:nth-of-type(2){
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.noticemain .notice{
+    max-width: 850px;
+    width: 90%;
+    height: 60px;
+    background: white;
+
+    border:1px solid #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.noticemain .notice p{
+    margin-left: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:rgb(50,50,50);
+}
+.noticemain .list{
+    max-width: 850px;
+    width: 90%;
+    height: 100px;
+    background: white;
+
+    border:1px solid #f8f8f8;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.noticemain .list div{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticemain .list div p{
+    
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:rgb(50,50,50);
+}
+
+.noticemain>div:nth-of-type(1) ul li  .active{
+    
+    border-bottom: 5px solid #1fc7c1;
+    color:black;
+}
+
+.noticemain>div:nth-of-type(1) ul .up{
+    border-top:3px dotted rgb(192, 192, 192);
+}
+
+@media(max-width:1200px){
+
+    .noticemain{
+ 
+        width: 100vw;
+        max-width: 1200px;
+        display: flex;
+        margin:40px auto;
+  
+    }
+    .noticemain>div:nth-of-type(1){
+        
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 240px;
+        text-align: left;
+    }
+    
+    .noticemain>div:nth-of-type(1) ul li{
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .noticemain>div:nth-of-type(1) ul li a{
+        text-decoration: none;
+        color:gray;
+        font-weight: 700;
+    }
+    
+    .noticemain>div:nth-of-type(1) ul li a:hover{
+        color:#1fc7c1;
+    }
+    
+    .noticemain>div:nth-of-type(2){
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      
+        width: 100%;
+    }
+    .noticemain .notice{
+        max-width: 850px;
+        width: 90%;
+        height: 60px;
+        background: white;
+    
+        border:1px solid #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .noticemain .notice p{
+        margin-left: 20px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color:rgb(50,50,50);
+    }
+    .noticemain .list{
+        max-width: 850px;
+        width: 90%;
+        height: 100px;
+        background: white;
+    
+        border:1px solid #f8f8f8;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .noticemain .list div{
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .noticemain .list div p{
+        
+        font-size: 1.3rem;
+        font-weight: 700;
+        color:rgb(50,50,50);
+    }
+    
+    .noticemain>div:nth-of-type(1) ul li  .active{
+        
+        border-bottom: 5px solid #1fc7c1;
+        color:black;
+    }
+    
+    .noticemain>div:nth-of-type(1) ul .up{
+        border-top:3px dotted rgb(192, 192, 192);
+    }
+  
+}

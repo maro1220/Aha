@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "yg-jalnan";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.faqMain{
+    width: 100vw;
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+
+.faqMain h2{
+    font-family: "yg-jalnan";
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.faqMain>div{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.faqMain>div>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top: 2px solid rgb(53, 50, 50);
+}
+.faqMain>div>div:nth-of-type(8){
+    border-bottom:2px solid rgb(53, 50, 50);
+}
+.faqMain>div>div>div>p{
+    
+  
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+ 
+    color:rgb(53, 50, 50);
+}
+
+.faqMain>div>div>span{
+    display: block;
+    padding: 15px 10px;
+}
+
+.faqMain>div>div>a>button{
+    font-size: 0.9rem;
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    margin:10px;
+    background-color: #6158f2;
+    stroke: none;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+@media(max-width:640px){
+    .faqMain{
+        width: 100vw;
+        margin-top: 180px;
+        margin-bottom: 150px;
+    }
+    
+    .faqMain h2{
+        font-family: "yg-jalnan";
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+    
+    .faqMain>div{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        max-width: 800px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .faqMain>div>div>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        border-top: 2px solid rgb(53, 50, 50);
+    }
+    .faqMain>div>div:nth-of-type(8){
+        border-bottom:2px solid rgb(53, 50, 50);
+    }
+    .faqMain>div>div>div>p{
+        
+      
+        padding: 15px 10px;
+        font-size: 1rem;
+        font-weight: 700;
+     
+        color:rgb(53, 50, 50);
+    }
+    
+    .faqMain>div>div>span{
+        font-size: 0.8rem;
+        display: block;
+        padding: 15px 10px;
+    }
+    
+    .faqMain>div>div>a>button{
+    
+        font-size: 0.9rem;
+        width: auto;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        margin:10px;
+        background-color: #6158f2;
+        stroke: none;
+        outline: none;
+        border:none;
+    }
+    
+}
