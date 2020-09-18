@@ -176,7 +176,7 @@
     }
     
     .noticemain .list div{
-        margin-left: 20px;
+        margin-left: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -184,7 +184,7 @@
     
     .noticemain .list div p{
         
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 700;
         color:rgb(50,50,50);
     }

@@ -19,31 +19,37 @@ const Slider = () => {
       id:1,
       src: img1,
       color: "#20d7d0",
+      link:'/Aha'
     },
     {
       id:2,
       src: img2,
       color: "#0e2ab1",
+      link:'/Aha/tokens'
     },
     {
       id:3,
       src: img3,
       color: "#3c50d1",
+      link:'/Aha'
     },
     {
       id:4,
       src: img4,
       color: "#0076bf",
+      link:'/Aha/about'
     },
     {
       id:5,
       src: img5,
       color: "#6158f2",
+      link:'/Aha/about'
     },
     {
       id:6,
       src: img1,
       color: "#20d7d0",
+      link:'/Aha'
     },
   ]);
   const [style, setStyel] = useState({
@@ -71,7 +77,7 @@ const Slider = () => {
           <ul className="slider" ref={refs} style={style}>
             {li.map((li) => (
               <li key={li.id} className="slider_list" style={{ background: li.color }}>
-                <Link to="/Aha" style={{ width: "100%" }}>
+                <Link to={li.link} style={{ width: "100%" }}>
                   <img src={li.src}  alt={li.src}/>
                 </Link>
               </li>

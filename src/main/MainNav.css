@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+#menu-list-grow{
+  outline: none;
+}
+
 @font-face {
   font-family: "yg-jalnan";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
@@ -157,8 +161,12 @@ body {
     align-items: center;
   }
   
-  .nav  .snav1  img {
+  .nav .snav1 button{
     display: none;
+    
+  }
+  .nav  .snav1  img {
+    display: flex;
     margin-bottom: 10px;
     transform: scale(0.9);
   }

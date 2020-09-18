@@ -78,7 +78,7 @@ const FaqMain = () => {
                 <div>
             
                     {data.map(data=>
-                    <div>
+                    <div key={data.id}>
                         <div onClick={()=>datas(data.id)}>
                             <p style={data.checked === true ? {color:'#6158f2'}:{color:'black'}} >{data.text1}</p>
                             {data.checked === false ? 
@@ -88,7 +88,7 @@ const FaqMain = () => {
 
              
                     { data.checked ===true && <span>{data.text}</span>}
-                            { data.checked ===false || data.button ===true &&<Link to="/Aha/faq"><button>{data.buttontext}</button></Link>}
+                            { data.checked ===true && data.button ===true &&<Link to="/Aha/faq"><button>{data.buttontext}</button></Link>}
                     </div>
                     )
                    }

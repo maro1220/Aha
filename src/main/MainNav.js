@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Button from "@material-ui/core/Button";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Grow from "@material-ui/core/Grow";
@@ -6,19 +6,24 @@ import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
-import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import aha_logo_black from "../images/main/aha_logo_black.png";
 import "./MainNav.css";
 import useInterval from "react-useinterval";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
+  Popper: {
+    transform: " translate3d(0px, 0px, 0px)",
+    marginTop:'20px',
+    outline: "none",
+    stroke: "none",
+    zIndex: 10,
   },
 }));
 
 export default function MainNav() {
+  const classes = useStyles();
   const [num, setNum] = useState(1);
   const [style, setStyle] = useState({
     marginTop: 0,
@@ -54,7 +59,6 @@ export default function MainNav() {
     }
   }, 2000);
 
-  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
@@ -79,16 +83,21 @@ export default function MainNav() {
 
   // return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open);
-  React.useEffect(() => {
+  useEffect(
+    () => {
     if (prevOpen.current === true && open === false) {
       anchorRef.current.focus();
     }
-
     prevOpen.current = open;
+return()=>{
+
+}
+   
+    
   }, [open]);
 
   return (
-    <div className={classes.root}>
+    <div>
       <div className="navall">
         <div className="nav">
           <div className="snav1">
@@ -126,28 +135,25 @@ export default function MainNav() {
             </Link>
           </div>
           <Popper
+            className={classes.Popper}
+         
             open={open}
-            anchorEl={anchorRef.current}
+            anchorEl={anchorRef.current} //이거다
             role={undefined}
             transition
             disablePortal
-            style={{
-              marginTop: "20px",
-              outline: "none",
-              stroke: "none",
-              zIndex: 10,
-            }}
           >
             {({ TransitionProps, placement }) => (
               <Grow
                 {...TransitionProps}
                 style={{
-                  transformOrigin: placement === "bottom" ? "top" : "bottom",
+                  transformOrigin:
+                    placement === "bottom" ? "center top" : "center bottom",
                 }}
               >
                 <Paper
                   style={{
-                    width: "100vw",
+                    width: "98vw",
                     background: "white",
                     boxShadow: "none",
                     outline: "none",
@@ -155,12 +161,8 @@ export default function MainNav() {
                     border: "none",
                   }}
                 >
-                  <ClickAwayListener
-                    onClickAway={handleClose}
-                    style={{ outline: "none", stroke: "none" }}
-                  >
+                  <ClickAwayListener onClickAway={handleClose}>
                     <MenuList
-                      style={{ outline: "none", stroke: "none" }}
                       autoFocusItem={open}
                       id="menu-list-grow"
                       onKeyDown={handleListKeyDown}
@@ -177,15 +179,21 @@ export default function MainNav() {
                         }}
                       >
                         <div>
-                          <p
-                            style={{
-                              margin: "10px 20px 0px 0px",
-                              fontWeight: "700",
-                              fontSize: "1.1rem",
-                            }}
-                          >
-                            아하QA
-                          </p>
+                          <MenuItem onClick={handleClose}>
+                            <Link
+                              to="/Aha"
+                              style={{
+                                margin: "10px 20px 0px 0px",
+                                fontWeight: "700",
+                                fontSize: "1.1rem",
+                                textDecoration: "none",
+                                color: "rgb(70,70,70)",
+                              }}
+                            >
+                              {" "}
+                              아하QA
+                            </Link>
+                          </MenuItem>
                         </div>
                         <div className="list">
                           <MenuItem onClick={handleClose}>의료</MenuItem>
@@ -201,17 +209,6 @@ export default function MainNav() {
                           <MenuItem onClick={handleClose}>생활상식</MenuItem>
                           <MenuItem onClick={handleClose}>재택크상식</MenuItem>
                           <MenuItem onClick={handleClose}>부동산</MenuItem>
-                          <MenuItem onClick={handleClose}>
-                            <Link
-                              style={{
-                                textDecoration: "none",
-                                color: "black",
-                              }}
-                            >
-                              {" "}
-                              주식
-                            </Link>
-                          </MenuItem>
                         </div>
                         <div className="list">
                           <MenuItem onClick={handleClose}>
@@ -252,7 +249,7 @@ export default function MainNav() {
                           </MenuItem>
                           <MenuItem onClick={handleClose}>
                             <Link
-                              to="/Aha/token"
+                              to="/Aha/tokens"
                               style={{
                                 textDecoration: "none",
                                 color: "rgb(70,70,70)",

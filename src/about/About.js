@@ -5,6 +5,7 @@ import AboutMain from "./AboutMain";
 
 
 
+
 const About = () => {
   return (
     <div style={{background:'#f8f8f8',height:'100%',width:'100vw' , overflow:'hidden'}}>
